@@ -20,11 +20,11 @@ cd release\last_release
 
 echo Adding verison ID to the JAR archive
 echo %vid%>version
-jar uf AutoClient.jar version
+java jar uf AutoClient.jar version
 del version
 echo  
 echo Packing
-7za a -tzip -y -r "../AutoClient_%vid%.zip" "*.*"
+7z a -tzip -y -r "../AutoClient_%vid%.zip" "*.*"
 
 
 rem cd ..
